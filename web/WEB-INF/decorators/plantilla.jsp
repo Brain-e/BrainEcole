@@ -3,7 +3,12 @@
     Created on : 20-may-2015, 22:11:58
     Author     : hurko
 --%>
+
 <!DOCTYPE html>
+<%@ taglib uri="http://www.opensymphony.com/sitemesh/decorator" prefix="decorator" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
   <head>
     <meta charset="UTF-8">
@@ -45,7 +50,7 @@
       
       <header class="main-header">
         <!-- Logo -->
-        <a href="index.html" class="logo">
+        <a href="index.htm" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>É</b>-br</span>
           <!-- logo for regular state and mobile devices -->
@@ -328,7 +333,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="C:\Users\hurko\Documents\AdminLTE-2.1.1\fichaProfesor.html"> Agregar profesor</a></li>
+                <li><a href="fichaProfesor.htm"> Agregar profesor</a></li>
                 <li><a href="#"> Ver profesores</a></li>
               </ul>
             </li>
@@ -364,6 +369,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           
+             <decorator:body />
           
         </section>
 
